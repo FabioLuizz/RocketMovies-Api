@@ -3,7 +3,7 @@ require('express-async-errors')
 
 const AppError = require('./utils/apperror')
 const express = require('express')
-const database = require('./database/sqlite')
+const database = require('./database/sqlite/index')
 const routes = require('./routes/index')
 const uploadsConfig = require('./config/upload')
 const cors = require('cors')
@@ -14,10 +14,6 @@ app.use(express.json())
 app.use(routes)
 
 app.use('/files', express.static(uploadsConfig.UPLOADS_FOLDER))
-
-app.get("/", (req, res) => {
-  return res.json({"message": "OK"});
-})
 
 app.use((error, request, response, next) => {
   if (error instanceof AppError) {
