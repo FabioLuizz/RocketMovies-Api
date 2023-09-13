@@ -34,7 +34,7 @@ Alguns detalhes a ser adicionado ao desafio:
 ## Projeto
 
 - Diagrama do projeto disponível no [**Link**](https://drawsql.app/teams/fabio-5/diagrams/desafio-rocketseat)
-
+- Projeto disponível no [**Link**](https://rocketmovies-fb.netlify.app/)
 
 
 
